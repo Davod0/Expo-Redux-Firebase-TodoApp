@@ -1,3 +1,5 @@
+Expo-Redux-Firebase-TodoApp
+
 Project Overview
 This is a React Native project built with Expo to improve my skills in Firebase and Redux Toolkit. The project aims to demonstrate how to integrate these technologies to build a robust and scalable mobile application.
 

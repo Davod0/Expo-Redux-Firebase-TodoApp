@@ -1,5 +1,5 @@
 {
-  "name": "kaffa",
+  "name": "Expo-Redux-Firebase-TodoApp",
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
   "scripts": {
