@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
-import { useDispatch } from "react-redux";
-import { addTodo } from "../store/todosSlice";
+import { useAppDispatch } from "../store/hooks";
+import { addTodo } from "../store/todoAction";
 
 export default function TodoForm() {
   const [text, setTest] = useState("");
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const handleSubmit = () => {
-    dispatch(addTodo({ id: Date.now(), text, completed: false }));
+    dispatch(addTodo({ text }));
     setTest("");
   };
 

@@ -7,7 +7,7 @@ export default function TodoList() {
   const todos = useAppSelector((state) => state.todos);
   const disptach = useAppDispatch();
 
-  const handleToggleCompleteTodo = (id: number) => {
+  const handleToggleCompleteTodo = (id: string) => {
     disptach(toggleCompleteTodo(id));
   };
 
