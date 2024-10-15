@@ -15,7 +15,9 @@ export default function HomeScreen() {
       <Text style={s.headerText}>All todos</Text>
       {todos.map((todo) => (
         <View style={s.item} key={todo.id}>
-          <Text style={{ flex: 1 }}>{todo.text}</Text>
+          <Text style={[{ flex: 1 }, todo.completed && s.completed]}>
+            {todo.text}
+          </Text>
           <Button
             title={todo.completed ? "Undo" : "Done"}
             onPress={() => handleToggleCompleteTodo(todo.id)}
@@ -45,5 +47,9 @@ const s = StyleSheet.create({
     fontWeight: "bold",
     paddingBottom: 10,
     paddingTop: 40,
+  },
+  completed: {
+    textDecorationLine: "line-through",
+    color: "#bbb",
   },
 });
