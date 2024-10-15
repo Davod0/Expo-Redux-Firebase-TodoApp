@@ -1,8 +1,8 @@
 import { Button, StyleSheet, Text, View } from "react-native";
-import { useSelector } from "react-redux";
+import { useAppSelector } from "./store/hooks";
 
 export default function HomeScreen() {
-  const todos = useSelector((state) => state.todos);
+  const todos = useAppSelector((state) => state.todos);
 
   return (
     <View style={s.root}>
