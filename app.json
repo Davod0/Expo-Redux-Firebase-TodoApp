@@ -4,7 +4,7 @@
     "slug": "kaffa",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+      "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -22,6 +22,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "19c76249-5e59-43cc-bb71-be3298fb27bf"
+      }
     }
   }
 }
